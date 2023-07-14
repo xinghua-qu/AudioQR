@@ -54,26 +54,11 @@ def main():
     logger.info(hps)
     utils.check_git_hash(hps.model_dir)
 
-    ## Prepare the tensorboard: whether on local machine or Arnold cloud (hdfs savings)
-    tensorboard = 1
-    if tensorboard==0:
-        log_path = os.path.join(hps.model_dir, 'tensorboard')
-        writer = SummaryWriter(log_path)
-        log_path = os.path.join(hps.model_dir, 'tensorboard/eval')
-        writer_eval = SummaryWriter(log_path)
-    else:
-        HDFS_log_dir = os.environ.get("ARNOLD_OUTPUT")
-        if HDFS_log_dir:  # if Arnold supports remote Tensorboard
-            log_path = f'{HDFS_log_dir}/logs/{hps.run_name}'
-            cmd = f'hdfs dfs -mkdir -p {log_path}'
-            os.system(cmd)
-            writer = SummaryWriter(log_path)  # this line alone will create the folder
-
-            log_path = f'{HDFS_log_dir}/logs/{hps.run_name}/eval'
-            cmd = f'hdfs dfs -mkdir -p {log_path}'
-            print(cmd)
-            os.system(cmd)
-            writer_eval = SummaryWriter(log_path)  # this line alone will create the folder
+    log_path = os.path.join(hps.model_dir, 'tensorboard')
+    writer = SummaryWriter(log_path)
+    log_path = os.path.join(hps.model_dir, 'tensorboard/eval')
+    writer_eval = SummaryWriter(log_path)
+   
 
     torch.manual_seed(hps.train.seed)
     torch.cuda.set_device(rank)
@@ -224,7 +209,6 @@ def train_and_evaluate(rank, epoch, hps, net_nft, optims, schedulers, scaler, lo
                 utils.save_checkpoint(net_nft, optim_nft, hps.train.learning_rate, epoch, os.path.join(hps.save_dir, "AS_model.pth"))
                 os.system('python3 run_evaluate.py -c configs/ljs_base.json -m {} -s {} -p mixed --msg_dim {}'.format(hps.run_name, hps.max_step, hps.msg_dim))
                 os.system('tar cvf {}.tar {}'.format(hps.run_name, hps.save_dir))
-                os.system('hdfs dfs -put -f {}.tar hdfs://haruna/home/byte_arnold_lq_speech_tts/user/xinghua/saved_results/AudioStamp/'.format(hps.run_name))
                 os._exit(0)
             global_step += 1
     
