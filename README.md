@@ -10,7 +10,7 @@
 </p>
 <br>
 
-[[Youtube Video for Audio QR Code](https://github.com/xinghua-qu/AudioQR/assets/36146785/063d8a84-0b05-4682-ae68-a39e6c78f03d)](https://www.youtube.com/watch?v=FmcZgRgMwEM)
+[![Youtube Video for Audio QR Code](https://github.com/xinghua-qu/AudioQR/assets/36146785/063d8a84-0b05-4682-ae68-a39e6c78f03d)](https://www.youtube.com/watch?v=FmcZgRgMwEM)
 
 
 ## Abstract
