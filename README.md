@@ -19,6 +19,10 @@ Image-based quick response (QR) code is frequently used, but creates barriers fo
 </p>
 <br>
 
+## Demos
+TO-BE appear
+
+
 ## Prepared the environment
 
 ```pip3 install -r requirements.txt ```
