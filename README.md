@@ -1,5 +1,8 @@
 # AudioQR
 
+- Our work has been accpted by IJCAI-2023.
+- Our paper has been highlighted by IJCAI-2023 officially. [🔬The research #AI4SG1368 on "AudioQR: Deep Neural Audio Watermarks for QR Code" by Xinghua Qu, et al. presents an innovative application scenario for visually impaired individuals.](https://www.linkedin.com/feed/update/urn:li:activity:7085199256826830849/)
+
 ## Prepared the environment
 
 ```pip3 install -r requirements.txt ```
