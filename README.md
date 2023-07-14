@@ -10,7 +10,7 @@
 </p>
 <br>
 
-[[Audio QR Code]<img width="950" alt="Screenshot 2023-07-14 at 4 19 59 PM" src="https://github.com/xinghua-qu/AudioQR/assets/36146785/063d8a84-0b05-4682-ae68-a39e6c78f03d">](https://www.youtube.com/watch?v=FmcZgRgMwEM "Audio QR Code")
+[[Youtube Video for Audio QR Code]<img width="850" alt="Screenshot 2023-07-14 at 4 19 59 PM" src="https://github.com/xinghua-qu/AudioQR/assets/36146785/063d8a84-0b05-4682-ae68-a39e6c78f03d">](https://www.youtube.com/watch?v=FmcZgRgMwEM "Audio QR Code")
 
 
 ## Abstract
