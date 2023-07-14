@@ -10,7 +10,8 @@
 </p>
 <br>
 
-[![Audio QR Code video](https://i9.ytimg.com/vi_webp/FmcZgRgMwEM/mq2.webp?sqp=CNT-w6UG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgTyg2MA8=&rs=AOn4CLDvtWt33bMN9VSaGwlTJaa_-D5krw)](https://www.youtube.com/watch?v=FmcZgRgMwEM "Audio QR Code")
+[![Audio QR Code video](<img width="1392" alt="Screenshot 2023-07-14 at 4 19 59 PM" src="https://github.com/xinghua-qu/AudioQR/assets/36146785/063d8a84-0b05-4682-ae68-a39e6c78f03d">)](https://www.youtube.com/watch?v=FmcZgRgMwEM "Audio QR Code")
+
 
 ## Abstract
 Image-based quick response (QR) code is frequently used, but creates barriers for the visual impaired people. With the goal of AI for good, this paper proposes the AudioQR, a barrier-free QR coding mechanism for the visually impaired population via deep neural audio watermarks. Previous audio watermarking approaches are mainly based on handcrafted pipelines, which is less secure and difficult to apply in large-scale scenarios. In contrast, AudioQR is the first comprehensive end-to-end pipeline that hides watermarks in audio imperceptibly and robustly. To achieve this, we jointly train an encoder and decoder, where the encoder is structured as a concatenation of transposed convolutions and multi-receptive field fusion modules. Moreover, we customize the decoder training with a stochastic data augmentation chain to make the watermarked audio robust towards different audio distortions, such as environment background, room impulse response when playing through the air, music surrounding, and Gaussian noise. Experiment results indicate that AudioQR can efficiently hide arbitrary information into audio without introducing significant perceptible difference.
