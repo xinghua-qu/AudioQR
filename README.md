@@ -11,7 +11,6 @@
 <br>
 
 [Youtube Video for Audio QR Code](https://www.youtube.com/watch?v=FmcZgRgMwEM)
-
 [<img width="850" alt="Screenshot 2023-07-14 at 4 19 59 PM" src="https://github.com/xinghua-qu/AudioQR/assets/36146785/d736cc14-2a20-46aa-bad2-c881e38a4dd8">](https://www.youtube.com/watch?v=FmcZgRgMwEM)
 
 ## Abstract
